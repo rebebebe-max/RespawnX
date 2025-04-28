@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="Test.css">
+</head>
+<body>
+  <title>RespawnX</title>
+  <link rel="icon" type="image/x-icon" href="icon/Untitled_design-removebg-preview.png">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="nav-logo">🎮</span>
+      <span class="nav-title">RespawnX</span>
+    </div>
+    <div class="sidebar-links">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+      <a href="Home.html"><i class="fas fa-home"></i> <span style="margin-left: 5px;">Home</span></a> 
+      <a href="Video.html"><i class="fas fa-video"></i> <span style="margin-left: 5px;">Video</span></a>
+      <a href="Notification.html"><i class="fas fa-bell"></i> <span style="margin-left: 5px;">Notification</span></a>
+      <a href="News.html"><i class="fas fa-newspaper"></i> <span style="margin-left: 5px;">News</span></a>
+      <a href="ContactUs.html"><i class="fas fa-envelope"></i> <span style="margin-left: 5px;">Contact Us</span></a>
+
+    </div>
+  </nav>
+
+<div class="main-container">
+
+  <!-- Quick Access Section -->
+  <div class="card-container">
+    <h2>Quick Access</h2>
+    <div class="quick-access">
+      <div class="quick-card" onclick="handleClick('My Batches')">
+        <img src="" alt="Batches Icon">
+        <h3>Video</h3>
+        <p>View list of batches in which you are enrolled</p>
+      </div>
+
+      <div class="quick-card" onclick="handleClick('My Doubts')">
+        <img src="https://img.icons8.com/fluency/48/000000/question-mark.png" alt="Doubts Icon">
+        <h3>My Doubts</h3>
+        <p>View the list of your asked doubts in the lectures</p>
+      </div>
+
+      <div class="quick-card" onclick="handleClick('My History')">
+        <img src="https://img.icons8.com/fluency/48/000000/task.png" alt="History Icon">
+        <h3>My History</h3>
+        <p>View your recent learning here</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Recommended Batches Section -->
+  <div class="batches-header">
+    <div>
+      <h2>Top Recommended Batches</h2>
+      <p>Let's start with these popular batches</p>
+    </div>
+    <button class="filter-btn">For Online</button>
+  </div>
+
+  <div class="batches-grid">
+
+    <div class="batch-card">
+      <div class="batch-header">
+        <h3>NEET ENDGAME 2.0 [2025]</h3>
+        <div class="badges">
+          <span class="new-badge">New</span>
+          <img src="" alt="Share">
+        </div>
+      </div>
+      <img class="batch-image" src="img/Untitled_design-removebg-preview.png" alt="Batch Image">
+      <div class="language-tag">Malayalam</div>
+    </div>
+
+    <div class="batch-card">
+      <div class="batch-header">
+        <h3>SUPER KINGS - NEET CBSE [2026]</h3>
+        <div class="badges">
+          <span class="new-badge">New</span>
+          <img src="https://img.icons8.com/material-rounded/24/000000/share.png" alt="Share">
+        </div>
+      </div>
+      <img class="batch-image" src="https://via.placeholder.com/300x150.png?text=SUPER+KINGS+CBSE" alt="Batch Image">
+      <div class="language-tag">Malayalam</div>
+    </div>
+
+    <div class="batch-card">
+      <div class="batch-header">
+        <h3>SUPER KINGS - NEET STATE [2026]</h3>
+        <div class="badges">
+          <span class="new-badge">New</span>
+          <img src="https://img.icons8.com/material-rounded/24/000000/share.png" alt="Share">
+        </div>
+      </div>
+      <img class="batch-image" src="https://via.placeholder.com/300x150.png?text=SUPER+KINGS+STATE" alt="Batch Image">
+      <div class="language-tag">Malayalam</div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="Script.js"></script>
+
+</body>
+</html>

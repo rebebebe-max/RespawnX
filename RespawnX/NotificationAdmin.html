@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RespawnX - Notification Admin</title>
+  <link rel="stylesheet" href="Notification.css">
+  <link rel="stylesheet" href="Nav.css">
+  <link rel="icon" type="image/x-icon" href="icon/Untitled_design-removebg-preview.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+</head>
+<body>
+
+  <nav class="sidebar">
+    <div class="sidebar-top">
+      <img src="icon/Untitled_design-removebg-preview.png" alt="Logo" class="sidebar-icon">
+      <span class="sidebar-title">RespawnX</span>
+    </div>
+    <div class="sidebar-links">
+      <a href="AdminPanel.html"><i class="fas fa-home"></i> <span>Home</span></a>
+      <a href=""><i class="fas fa-video"></i> <span>Video</span></a>
+      <a href="NotificationAdmin.html"><i class="fas fa-bell"></i> Notification</a>
+      <a href="admin.html"><i class="fas fa-newspaper"></i> News</a>
+    </div>
+  </nav>
+
+  <main style="margin-left: 260px; padding: 20px;">
+    <h1>Manage Notifications (Admin)</h1>
+    <br>
+    
+    <form id="notificationForm" style="margin-bottom: 20px;">
+      <input type="text" id="notificationInput" placeholder="Enter notification..." style="padding: 10px; width: 60%;">
+      <button type="submit" style="padding: 10px;">Add Notification</button>
+    </form>
+
+    <div class="notifications">
+      <ul id="notificationList"></ul>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

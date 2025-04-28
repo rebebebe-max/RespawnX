@@ -1,0 +1,186 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f9fc;
+  color: #333;
+}
+
+/* Main Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 40px;
+  color: #00bdd6;
+}
+
+.header h2 span {
+  color: #888;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.dropdown {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e0f7fa;
+  transition: background 0.3s;
+}
+
+.dropdown:hover {
+  background-color: #b2ebf2;
+}
+
+ 
+
+/* Button */
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-classes {
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-items: center;
+}
+
+.view-classes:hover {
+  background-color: #0097a7;
+}
+
+.live-heading {
+  color: #dc143c; /* White text */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+
+.live-class {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0; /* Removed auto centering */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.live-video {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: auto;
+  text-decoration: none;
+}
+
+.live-video img {
+  width: 60%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* LIVE badge */
+.live-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+.banner-slider {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 10px;
+}
+
+.banner-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+/* Live Stream Card Style */
+.class-card {
+  padding: 50px;
+  margin: 50px 0;
+  background-color: #f1f1f1;
+  border-left: 10px solid #00bcd4;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+
+}
+
+/* Style the thumbnail image */
+.class-card img {
+  width: 80px;  /* Adjust width as needed */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px; /* Add space between image and text */
+}
+
+/* Style for the title text */
+.class-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.class-card a {
+  text-decoration: none;
+  color: inherit;
+}

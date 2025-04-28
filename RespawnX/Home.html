@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RespawnX</title>
+  <link rel="stylesheet" href="Nav.css">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="icon" type="image/x-icon" href="icon/Untitled_design-removebg-preview.png">
+</head>
+<body>
+
+
+  <nav class="sidebar">
+    <div class="sidebar-top">
+      <img src="icon/Untitled_design-removebg-preview.png" alt="Logo" class="sidebar-icon">
+      <span class="sidebar-title">RespawnX</span>
+    </div>
+    <div class="sidebar-links">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+      <a href="Home.html"><i class="fas fa-home"></i> <span style="margin-left: 5px;">Home</span></a> 
+      <a href="Video.html"><i class="fas fa-video"></i> <span style="margin-left: 5px;">Video</span></a>
+      <a href="Notification.html"><i class="fas fa-bell"></i> <span style="margin-left: 5px;">Notification</span></a>
+      <a href="News.html"><i class="fas fa-newspaper"></i> <span style="margin-left: 5px;">News</span></a>
+      <a href="ContactUs.html"><i class="fas fa-envelope"></i> <span style="margin-left: 5px;">Contact Us</span></a>
+
+    </div>
+  </nav>
+  
+  
+  
+
+  <div class="container">
+    <div class="header">
+      <h2>RespawnX</h2>
+    </div>
+    <h3 class="live-heading">Live</h3>
+
+    <div class="class-card" id="liveClassCard">
+      <p>Coming soon...</p>
+    </div>
+  
+    <div class="buttons">
+      <a href="https://www.youtube.com/@Respawnxsince2024/streams">
+        <button class="view-classes">View All Lives</button>
+      </a>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<div class="banner-slider">
+  <div>
+    <img src="Banner/channels4_banner (1).jpg" alt="Banner 1">
+  </div>
+  <div>
+    <img src="#" alt="Banner 2">
+  </div>
+  <div>
+    <img src="#" alt="Banner 3">
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.banner-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      centerMode: true,
+      centerPadding: '0px'
+    });
+  });
+
+  // Check if live event is scheduled and display it
+  window.onload = function() {
+    const liveEvent = JSON.parse(localStorage.getItem('liveEvent'));
+    if (liveEvent) {
+      document.getElementById('liveClassCard').innerHTML = `
+        <a href="${liveEvent.link}" target="_blank">
+          <img src="${liveEvent.thumbnail}" alt="Live Thumbnail" style="width:100%; max-width: 200px; border-radius: 8px;">
+          <p>Live Now: ${liveEvent.title}</p>
+        </a>
+      `;
+    }
+  };
+</script>
+
+
+  
+</body>
+</html>
+

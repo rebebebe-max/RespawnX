@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - RespawnX</title>
+  <link rel="stylesheet" href="Nav.css">
+  <link rel="stylesheet" href="AdminPanel.css">
+  <link rel="icon" type="image/x-icon" href="icon/Untitled_design-removebg-preview.png">
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar-top">
+    <img src="icon/Untitled_design-removebg-preview.png" alt="Logo" class="sidebar-icon">
+    <span class="sidebar-title">RespawnX</span>
+  </div>
+  <div class="sidebar-links">
+    <a href="AdminPanel.html"><i class="fas fa-home"></i> <span>Home</span></a>
+      <a href=""><i class="fas fa-video"></i> <span>Video</span></a>
+      <a href="NotificationAdmin.html"><i class="fas fa-bell"></i> Notification</a>
+      <a href="admin.html"><i class="fas fa-newspaper"></i> News</a>
+  </div>
+</nav>
+
+<div class="admin-container">
+  <div class="header">
+    <h2>Admin Panel - RespawnX</h2>
+  </div>
+
+  <!-- Change Banner Image Section -->
+  <div class="admin-section">
+    <h3>Change Banner Image</h3>
+    <form id="bannerForm">
+      <input type="file" id="bannerImage" accept="image/png" required>
+      <button type="submit" class="admin-btn">Upload Banner</button>
+    </form>
+    <button class="admin-btn delete-btn" id="deleteBannerBtn">Delete Banner</button>
+  </div>
+
+  <!-- Schedule Live Event Section -->
+  <div class="admin-section">
+    <h3>Schedule Live Event</h3>
+    <form id="liveForm">
+      <label for="liveTitle">Live Event Title:</label>
+      <input type="text" id="liveTitle" placeholder="Enter live event title" required><br><br>
+      
+      <label for="liveLink">YouTube Stream Link:</label>
+      <input type="url" id="liveLink" placeholder="Enter YouTube stream link" required><br><br>
+      
+      <label for="liveDate">Live Event Date:</label>
+      <input type="datetime-local" id="liveDate" required><br><br>
+      
+      <label for="liveThumbnail">Upload Thumbnail (Image PNG):</label>
+      <input type="file" id="liveThumbnail" accept="image/png" required><br><br>
+      
+      <button type="submit" class="admin-btn">Schedule Live</button>
+    </form>
+    <button class="admin-btn delete-btn" id="deleteLiveBtn">Delete Scheduled Live</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

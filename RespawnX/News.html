@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RespawnX</title>
+  <link rel="stylesheet" href="Nav.css">
+  <link rel="stylesheet" href="News.css">
+  <link rel="icon" type="image/x-icon" href="icon/Untitled_design-removebg-preview.png">
+</head>
+<body>
+
+  <nav class="sidebar">
+    <div class="sidebar-top">
+      <img src="icon/Untitled_design-removebg-preview.png" alt="Logo" class="sidebar-icon">
+      <span class="sidebar-title">RespawnX</span>
+    </div>
+    <div class="sidebar-links">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+      <a href="Home.html"><i class="fas fa-home"></i> <span style="margin-left: 5px;">Home</span></a> 
+      <a href="Video.html"><i class="fas fa-video"></i> <span style="margin-left: 5px;">Video</span></a>
+      <a href="Notification.html"><i class="fas fa-bell"></i> <span style="margin-left: 5px;">Notification</span></a>
+      <a href="News.html"><i class="fas fa-newspaper"></i> <span style="margin-left: 5px;">News</span></a>
+      <a href="ContactUs.html"><i class="fas fa-envelope"></i> <span style="margin-left: 5px;">Contact Us</span></a>
+
+    </div>
+  </nav>
+
+ <!-- Top Recommended Batches Section -->
+ <div class="batches-header">
+  <div>
+    <br>
+    <div class="helo">
+    <h2>News</h2>
+    </div>
+    <br>
+    <p></p>
+
+    <div id="newsContainer"></div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <h2 id="popupTitle"></h2>
+        <img id="popupImage" src="" alt="News Image">
+        <p id="popupDesc"></p>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+      window.onload = function() {
+        loadNews();
+      };
+    </script>
+
+</div>
+</body>
+</html>
